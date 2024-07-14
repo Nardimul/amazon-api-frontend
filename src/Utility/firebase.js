@@ -1,22 +1,25 @@
-import firebase from "firebase/compat/app";
-// We have to add additional functionalities to services on the firebase
-import {getAuth} from "firebase/auth"
-import "firebase/compat/firestore"
-import "firebase/compat/auth"
 
+import firebase  from "firebase/compat/app";
+// auth
+import {getAuth} from 'firebase/auth';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+
+
+// Import the functions you need from the SDKs you need
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCpzSADRZRo2suDc2BTIlTAndMVFJtB7jE",
-  authDomain: "clone-c27be.firebaseapp.com",
-  projectId: "clone-c27be",
-  storageBucket: "clone-c27be.appspot.com",
-  messagingSenderId: "152258396185",
-  appId: "1:152258396185:web:a4451ef219e515e03dea88"
+  apiKey: "AIzaSyCEdhj7l2DE7cwGPitt-PP-EHY8baZ_YyA",
+  authDomain: "clone-670e0.firebaseapp.com",
+  projectId: "clone-670e0",
+  storageBucket: "clone-670e0.appspot.com",
+  messagingSenderId: "982178543233",
+  appId: "1:982178543233:web:0e1fdb5f56e151ed703f80"
 };
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
-// It will store every services related to authentication is stored on auth variale
-export const auth = getAuth(app)
-export const db =app.firestore()
+
+export const auth=getAuth(app);
+export const db =app.firestore();

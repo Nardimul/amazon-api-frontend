@@ -1,13 +1,13 @@
 import React from 'react'
 import classes from './header.module.css'
-import { AiOutlineMenu } from "react-icons/ai";
+import { FiMenu } from "react-icons/fi";
 
 function LowerHeader() {
   return ( 
     <div className={classes.lower__container}>
       <ul>
         <li>
-            <AiOutlineMenu />
+            <FiMenu />
             <p>All</p>
         </li>
         <li>Today's deals</li>
